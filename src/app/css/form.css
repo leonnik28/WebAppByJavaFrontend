@@ -1,0 +1,32 @@
+input, select, textarea{
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255, 0.125);
+    border-radius: 8px;
+}
+
+.add-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.content {
+    border: 1px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+select option {
+    background-color: black; /* Цвет фона */
+    color: white; /* Цвет текста */
+}
+
+select::-ms-expand {
+    display: none; /* Скрыть стандартную стрелку для Internet Explorer */
+}
+select {
+    appearance: none; /* Убрать стандартную стрелку для остальных браузеров */
+}

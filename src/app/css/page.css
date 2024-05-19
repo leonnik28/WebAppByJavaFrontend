@@ -1,0 +1,52 @@
+.body{
+    color: white;
+    font-family: "Inter";
+    direction: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-content{
+    display: flex;
+    align-content: center;
+    margin: 3em;
+}
+
+.info-text{
+    margin: 0;
+}
+
+.p{
+    font-style: light;
+    margin: 0;
+}
+
+.h1{
+    font-style: bold;
+    display: inline;
+}
+
+.description{
+    padding-left: 5%;
+}
+
+.information{
+    flex-direction: row;
+    display: flex;
+    padding-left: 5%;
+}
+
+.rating{
+    padding-left: 5%;
+}
+
+.anime-preview{
+    width: 25%;
+    height: 25%;
+    border-radius: 3em;
+    transition: transform 0.3s;
+}
+
+.anime-preview:hover{
+    transform: scale(1.05) rotate(-10deg);
+}

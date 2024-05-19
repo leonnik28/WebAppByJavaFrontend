@@ -1,0 +1,99 @@
+.card {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(41, 41, 41, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.4em;
+    height: 100%;
+}
+
+.svg-class {
+    fill: white;
+}
+
+.captio {
+    align-self: flex-end;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    filter: blur(100px);
+    display:flex;
+    z-index: -1;
+}
+
+.circle-1 {
+    background-color: #E94068;
+    animation: fadeInOut 10s infinite;
+}
+
+.circle-2 {
+    background-color: #7E4BD1;
+    right: 10px;
+    animation: fadeInOut 9s infinite;
+}
+
+.circle-3 {
+    background-color: #58C3FF;
+    bottom: 10px;
+    left: 10px;
+    animation: fadeInOut 12s infinite;
+}
+
+.circle-4 {
+    background-color: yellow;
+    bottom: 10px;
+    right: 10px;
+    animation: fadeInOut 10s infinite;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 0.3; }
+  }
+
+.list-container{
+    text-align: center;
+}
+
+button:active{
+    background-color: rgba(20, 20, 20, 0.75);
+    border-radius: 25%;
+}
+
+.popup {
+    position: fixed; /* фиксированное позиционирование, чтобы оно оставалось на месте при прокрутке */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* полупрозрачный фон */
+    backdrop-filter: blur(4px) saturate(150%);
+    -webkit-backdrop-filter: blur(4px) saturate(150%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* устанавливаем высокий уровень z-index, чтобы окно было поверх всех других элементов */
+}
+
+.popup-inner {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

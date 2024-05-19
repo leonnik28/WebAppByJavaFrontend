@@ -1,0 +1,20 @@
+.tab.active {
+    background-color: #3D76D6;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 8px;
+    height: 2rem;
+    transition: 0.5s;
+}
+
+.tab.active{
+    display: flex;
+    justify-content: center;
+}
+
+.tab{
+    border-radius: 8px;
+    text-align: center;
+}
+  

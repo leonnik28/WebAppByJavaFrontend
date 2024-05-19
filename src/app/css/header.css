@@ -1,0 +1,45 @@
+/* Style the header */
+header {
+  padding: 10px 16px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #f1f1f1;
+  backdrop-filter: blur(100px);
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.stickyy {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.content {
+  padding-top: 102px;
+}
+
+.searchInput {
+  padding: 6px 10px; /*Добавляет отступы внутри инпута */
+  box-sizing: border-box; /* Убеждается, что padding и border включены в общую ширину и высоту */
+  border-radius: 4px; /* Добавляет скругленные углы */
+  background-color: #1d1d1d; /* Устанавливает цвет фона */
+  font-size: 16px; /* Устанавливает размер шрифта */
+  transition: 0.3s; /* Добавляет анимацию при изменении стилей */
+}
+
+.searchInput:hover{
+  background-color: #2f2f2f;
+}
+
+.searchInput:focus {
+  border-color: #555; /* Изменяет цвет границы при фокусе */
+}
