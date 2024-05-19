@@ -14,12 +14,12 @@ const AbilitiesList = () => {
     const abilitieName = query.abilities || '';
   
     useEffect(() => {
-      axios.get(`${process.env.NEXT_PUBLIC_API_URL}/abilities/name/character?name=${abilitieName}`)
+      axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/abilities/name/character?name=${abilitieName}`)
         .then(response => {
           setCharacter(response.data);
         })
         .catch(error => console.error('Ошибка:', error));
-        axios.get(`${process.env.NEXT_PUBLIC_API_URL}/abilities/name?name=${abilitieName}`)
+        axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/abilities/name?name=${abilitieName}`)
         .then(response2 => {
             setAbility(response2.data);
           })

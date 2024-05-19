@@ -18,7 +18,7 @@ const AdminPanel = () => {
     const [characterToEdit, setCharacterToEdit] = useState(null);
 
     useEffect(() => {
-        axios.get(`${process.env.NEXT_PUBLIC_API_URL}/characters`)
+        axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/characters`)
             .then(response => setCharacterList(response.data))
             .catch(error => console.error('Ошибка:', error));
     }, []);

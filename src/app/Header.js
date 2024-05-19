@@ -15,7 +15,7 @@ const Header = () => {
         if (event.key === 'Enter') {
             event.preventDefault();
             router.push({
-                pathname: '/character',
+                pathname: '/api/character',
                 query: { name: inputValue }
               });
         }

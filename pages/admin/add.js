@@ -50,7 +50,7 @@ const AddAnime = ({ characterData, handleFormSubmit }) => {
       if (characterData) {
         // Обновление персонажа
         const response = await axios.put(
-          `${process.env.NEXT_PUBLIC_API_URL}/characters/update?id=${character.id}`,
+          `${process.env.NEXT_PUBLIC_API_URL}/api/characters/update?id=${character.id}`,
           character
         );
         alert("Successfully updated");
@@ -59,7 +59,7 @@ const AddAnime = ({ characterData, handleFormSubmit }) => {
       } else {
         // Создание персонажа
         const response = await axios.post(
-          `${process.env.NEXT_PUBLIC_API_URL}/characters/create`,
+          `${process.env.NEXT_PUBLIC_API_URL}/api/characters/create`,
           character
         );
         alert("Successfully added");

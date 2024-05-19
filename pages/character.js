@@ -16,12 +16,12 @@ const CharacterInfo = () => {
   useEffect(() => {
     const { name } = router.query;
     if (name) {
-      axios.get(`${process.env.NEXT_PUBLIC_API_URL}/characters/name?name=${name}`)
+      axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/characters/name?name=${name}`)
         .then(response => {
           const character = response.data[0];
           setCharacterData(character);
 
-          axios.get(`${process.env.NEXT_PUBLIC_API_URL}/characters/closest?name=${name}`)
+          axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/characters/closest?name=${name}`)
             .then(closestResponse => {
               setClosestCharacters(closestResponse.data);
             });

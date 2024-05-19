@@ -11,7 +11,7 @@ const CharacterList = () => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.NEXT_PUBLIC_API_URL}/characters`) // Используйте правильный порт
+      .get(`${process.env.NEXT_PUBLIC_API_URL}/api/characters`) // Используйте правильный порт
       .then((response) => {
         setCharacterList(response.data);
       })
