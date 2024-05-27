@@ -111,7 +111,7 @@ const EditButton = ({ togglePopup }) => {
 const DeleteButton = ({ characterId }) => {
     const handleClick = async () => {
         try {
-            const response = await axios.delete(`${process.env.NEXT_PUBLIC_API_URL}/characters/delete?id=${characterId}`);
+            const response = await axios.delete(`${process.env.NEXT_PUBLIC_API_URL}/api/characters/delete?id=${characterId}`);
             console.log(response.data);
         } catch (error) {
             console.error('There was a problem with the axios operation: ' + error.message);

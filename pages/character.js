@@ -78,7 +78,7 @@ const CharacterInfoContent = ({ characterData, closestCharacters }) => {
             </div>
             <img
               src={characterData.picUrl}
-              className="h-96 w-96 scale-105"
+              className="h-64 w-96 scale-105"
               alt={characterData.name}
             />
             <div className="flex flex-col pl-20">
